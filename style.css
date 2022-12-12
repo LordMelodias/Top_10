@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    color: #d1d0cf;
+    background: #3f3e3e;
+}
+.container-fluid{
+    padding: 0 100px;
+}
+
+.topten-contents{
+    position: relative;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+h1 a, h2 a, h3 a , h4 a, h5 a, h6 a{
+    color: inherit;
+} 
+
+#top-ten-slider-nav .slick-list{
+    overflow: visible;
+    padding-bottom: 40px !important;
+}
+#iq-topten .iq-title{
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    z-index: 50;
+    font-size: 28px;
+    font-weight: 700;
+}
+#top-ten-slider .slick-bg .iq-title a{
+    display: none;
+}
+
+.topten-title-sm{
+    display: none;
+}
+
+.vertical_s{
+    position: absolute;
+    top: 95px;
+    right: 0;
+    bottom: 0;
+    left: 35px;
+    overflow: hidden;
+}
+#top-ten-slider-nav{
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+#top-ten-slider-nav .slick-list.draggable{
+    height: 100% !important; 
+}
+#top-ten-slider-nav .slick-prev, #top-ten-slider-nav .slick-next{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#top-ten-slider-nav .NextArrow, #top-ten-slider-nav .PrevArrow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    width: 60px;
+    height: 35px;
+}
+#top-ten-slider .NextArrow, #top-ten-slider .PrevArrow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    width: 35px;
+    height: 60px !important;
+    outline: none;
+}
+#top-ten-slider-nav .NextArrow{
+    bottom: 0;
+}
+#top-ten-slider-nav .PrevArrow{
+    top: 0;
+}
+
+#top-ten-slider .NextArrow{
+    right: 0;
+    left: auto;
+}
+#top-ten-slider .PrevArrow{
+    left: 0;
+    right: auto;
+}
+
+/* we will see about arrow afterwards  */
+#top-ten-slider-nav .slick-next::before, #top-ten-slider-nav .slick-prev::before, #top-ten-slider .slick-next::before , #top-ten-slider .slick-prev::before{
+    display: none;
+}
+.slick-arrow{
+    cursor: pointer;
+}
+ul#top-ten-slider .slick-bg::before{
+    z-index: 0;
+}
+#top-ten-slider-nav .NextArrow:hover, #top-ten-slider-nav .NextArrow:focus{
+    outline: none !important;
+    border:  none !important;
+}
+#top-ten-slider-nav .PrevArrow:hover, #top-ten-slider-nav .PrevArrow:focus{
+    outline: none !important;
+    border:  none !important;
+}
+#top-ten-slider .NextArrow{
+    right: 10px;
+}
+#top-ten-slider .PrevArrow{
+    left: 10px;
+}
+
+/**********************/
+@media (max-width : 991px){
+    li.slide-item .block-description .parallax-ratting span{
+        font-size: 10px;
+    }
+}
+@media (max-width : 767px){
+    .parallax-window{
+        padding: 60px 0;
+    }
+    .parallax-heading{
+        font-size: 35px;
+    }
+}
+@media (max-width : 991px){
+    #top-ten-slider .NextArrow, #top-ten-slider .PrevArrow{
+        display: none;
+    }
+    .topten-title{
+        display: none;
+    }
+}
+@media (max-width : 767px){
+    #top-ten-slider .NextArrow{
+        right: 10px !important;
+    }
+    #top-ten-slider .PrevArrow{
+        left: 10px !important;
+    }
+
+    .container-fluid{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #top-ten-slider .NextArrow, #top-ten-slider .PrevArrow{
+        width: 30px;
+        height: 30px;
+        font-size: 23px;
+    }
+
+    .vertical_s{
+        position: static;
+    }
+    #top-ten-slider-nav{
+        width: 100%;
+        height: 100%;
+    }
+
+    #top-ten-slider .slick-bg .iq-title a{
+        display: block;
+        font-size: 0.7em;
+        color: #d1d0cf;
+    }
+    .vertical_s{
+        display: none;
+    }
+    .topten-title-sm{
+        display: block;
+    }
+    .topten-title{
+        display: none;
+    }
+    #top-ten-slider .slick-bg::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0% , rgba(20,20,20,1) 35%, rgba(83,100,141,0) 100%);
+        width: 100%;
+        z-index: -1;
+    }
+}
+/*************************/
+
+
+/**********************************/
+.overview-tab::before, .slick-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(36,36,36,1) 35%,
+    rgba(83,100,141,0) 100%);
+    z-index: 1;
+}
+.slick-bg::before{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 35% ,
+    rgba(83,100,141,0) 100%);
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+
+.block-description{
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block-description>h6{
+    font-size: 1.5em;
+}
+.block-description .iq-title{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+li.slide-item:hover .block-description{
+    animation: fadeIn 0.6s ease-in-out;
+    opacity: 1;
+}
+
+@media (max-width : 991px){
+    li.slide-item .block-description .movie-time span, li.slide-item .block-description .ratting-start, .block-description .movie-content li{
+        font-size: 10px;
+    }
+}
+
+.slick-vertical .block-description .hover-buttons > a{
+    opacity: 0;
+    display: none;
+    transition: all 0.45s ease 0s;
+}
+
+.slick-vertical .slick-slide.slick-current.slick-active .block-description .hover-buttons > a{
+    transition: all 0.45s ease 0s;
+    opacity: 1;
+    display: block;
+}
+li.slide-item .block-description .parallax-ratting span{
+    font-size: 14px;
+}
